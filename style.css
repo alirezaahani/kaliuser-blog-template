@@ -12,6 +12,7 @@ body {
     line-height: 2em;
     /*new*/
     background: #e6e6e6;
+    word-wrap: break-word;
 }
 
 p {
@@ -187,14 +188,12 @@ a:active {
 }
 
 #wrp .mini_icon li a.mi_home {
-    background: url(https://cdn.bayan.ir/blog/templates/365/home.png) no-repeat;
     display: block;
     height: 20px;
     width: 20px;
 }
 
 #wrp .mini_icon li a.mi_rss {
-    background: url(https://cdn.bayan.ir/blog/templates/365/rss.png) no-repeat;
     display: block;
     height: 20px;
     width: 20px;
@@ -338,7 +337,6 @@ a:active {
     padding-right: 10px;
     padding-top: 1px;
     display: inline-block;
-    background: url(https://cdn.bayan.ir/blog/templates/365/sub_ico.png) right no-repeat;
 }
 
 #wrp .box1 .bx_left .mod_left .cats li a {
@@ -346,7 +344,6 @@ a:active {
     padding-right: 20px;
     display: table-cell;
     *display: inline-block;
-    background: url(https://cdn.bayan.ir/blog/templates/365/folder_ico.png) right no-repeat;
 }
 
 #wrp .box1 .bx_left .mod_left .cats li h3 {
@@ -363,7 +360,7 @@ a:active {
 }
 
 #wrp .box1 .bx_left .mod_left .subcats {
-    margin-right: 14px;
+    margin-right: 24px;
     margin-top: -3px;
 }
 
@@ -396,29 +393,13 @@ a:active {
 /*-LINKs-*/
 #wrp .box1 .bx_left .mod_left ul.links li {
     padding: 2px 5px 3px 5px;
-    background: url(https://cdn.bayan.ir/blog/templates/365/line3.png) no-repeat center bottom;
-    *background: none;
-    *border-bottom: 1px solid #F5F5F5;
-    -moz-transition-duration: .3s;
-    -webkit-transition-duration: .3s;
-    -o-transition-duration: .3s;
-    -khtml-transition-duration: .3s;
-    /*white-space:nowrap;
-		overflow:hidden;*/
-}
-
-#wrp .box1 .bx_left .mod_left ul.links li:hover {
-    background: #E5E5E5 url(https://cdn.bayan.ir/blog/templates/365/line3.png) no-repeat center bottom;
-}
-
-#wrp .box1 .bx_left .mod_left .links li.selected {
-    background: #E5E5E5 url(https://cdn.bayan.ir/blog/templates/365/line3.png) no-repeat center bottom;
+    border-bottom: 1px solid #d5d5d5;
+    transition-duration: .3s;
 }
 
 #wrp .box1 .bx_left .mod_left .links li a {
     padding-bottom: 3px;
     padding-right: 10px;
-    background: url(https://cdn.bayan.ir/blog/templates/365/sidebar-bullet.png) right no-repeat;
 }
 
 #wrp .box1 .bx_left .mod_left .links .count {
@@ -428,15 +409,6 @@ a:active {
 
 #wrp .box1 .bx_left .mod_left ul.links li:last-child {
     border-bottom: 0px;
-    background: none;
-}
-
-#wrp .box1 .bx_left .mod_left ul.links li:last-child:hover {
-    background: #E5E5E5;
-}
-
-#wrp .box1 .bx_left .mod_left ul.links li.selected:last-child {
-    background: #E5E5E5;
 }
 
 /* Advertising ---- */
@@ -462,14 +434,13 @@ a:active {
 #wrp .box1 .bx_left .mod_left .cnt.stat {}
 
 #wrp .box1 .bx_left .mod_left .cnt.stat .row {
-    background: url(https://cdn.bayan.ir/blog/templates/365/line3.png) no-repeat center bottom;
-    *background: none;
     clear: both;
-    padding-bottom: 23px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #d5d5d5;
 }
 
 #wrp .box1 .bx_left .mod_left .cnt.stat .row:last-child {
-    background: none;
+    border-bottom: 0px solid #d5d5d5;
 }
 
 #wrp .box1 .bx_left .mod_left .cnt.stat .StatTitle {
@@ -513,7 +484,7 @@ a:active {
     padding: 2px 5px 2px 5px;
     color: #333;
     border: 1px solid #DDD;
-    background: #EEE url(https://cdn.bayan.ir/blog/templates/365/main-area-bg.png);
+    background: #EEE;
     display: table-cell;
     *display: inline-block;
     margin: 2px 0px 2px 0px;
@@ -547,8 +518,7 @@ a:active {
     padding-bottom: 3px;
     padding-right: 10px;
     display: table-cell;
-    *display: inline-block;
-    background: url(https://cdn.bayan.ir/blog/templates/365/sidebar-bullet.png) right no-repeat;
+    display: inline-block;
 }
 
 #wrp .box1 .bx_left .mod_left .cnt .list_view .cnt {
@@ -557,12 +527,17 @@ a:active {
     padding: 4px 5px 6px 0px;
     line-height: 18px;
     border: none;
-    background: url(https://cdn.bayan.ir/blog/templates/365/line3.png) no-repeat center bottom;
+    border-bottom: 1px solid #d5d5d5;
     -moz-transition-duration: .3s;
     -webkit-transition-duration: .3s;
     -o-transition-duration: .3s;
     -khtml-transition-duration: .3s;
 }
+
+#wrp .box1 .bx_left .mod_left .cnt .list_view .cnt:last-child {
+    border-bottom: 0px solid #d5d5d5;
+}
+
 
 #wrp .box1 .bx_left .mod_left .cnt .list_view li a {
     color: #222;
@@ -575,11 +550,9 @@ a:active {
 }
 
 #wrp .box1 .bx_left .mod_left .cnt .list_view .cnt:hover {
-    background: #E5E5E5 url(https://cdn.bayan.ir/blog/templates/365/line3.png) no-repeat center bottom;
 }
 
 #wrp .box1 .bx_left .mod_left .cnt .list_view .cnt.selected {
-    background: #E5E5E5 url(https://cdn.bayan.ir/blog/templates/365/line3.png) no-repeat center bottom;
 }
 
 #wrp .box1 .bx_left .mod_left .cnt .list_view .date {
@@ -619,8 +592,7 @@ a:active {
     float: right;
 }
 
-#wrp .box1 .bx_center .mod_center {
-}
+#wrp .box1 .bx_center .mod_center {}
 
 /* POST CENTER / CONTENT -> ------*/
 #wrp .box1 .bx_center a {}
@@ -1346,64 +1318,42 @@ img.renew {
     margin-right: 3px;
 }
 
-.footer .icons .bayan {
-    background: url(https://cdn.bayan.ir/blog/templates/shared/icon/bayan-icon.png) no-repeat;
-    width: 20px;
-    height: 20px;
-}
-
-.footer .icons .blog {
-    background: url(https://cdn.bayan.ir/blog/templates/shared/icon/blog-icon.png) no-repeat;
-    width: 20px;
-    height: 20px;
-}
-
-.footer .icons .bayanbox {
-    background: url(https://cdn.bayan.ir/blog/templates/shared/icon/bayanbox-icon.png) no-repeat;
-    width: 20px;
-    height: 20px;
-}
-
-.footer .icons .rss {
-    background: url(https://cdn.bayan.ir/blog/templates/shared/icon/rss-icon.png) no-repeat;
-    width: 20px;
-    height: 20px;
-}
-
-.footer .icons .templates {
-    background: url(https://cdn.bayan.ir/blog/templates/shared/icon/templates-icon.png) no-repeat;
-    width: 20px;
-    height: 20px;
-}
-
 @media (max-width: 800px) {
     #wrp {
         width: 100%;
     }
+
     #wrp .box1 .bx_center {
         width: 100%;
     }
-    #wrp .box1 .bx_left { 
-        width: 100%;    
+
+    #wrp .box1 .bx_left {
+        width: 100%;
     }
+
     .main_menu {
         height: unset;
         background: #666;
     }
-    .main_menu .cnt { 
+
+    .main_menu .cnt {
         width: 100%;
     }
+
     .main_menu .cnt li {
         float: unset;
         margin-right: 0px;
-	text-align: center;
+        text-align: center;
     }
+
     .header {
         padding: 1em;
     }
+
     .headerWrp {
         height: unset;
     }
+
     .header .hdr_right {
         float: unset;
         text-align: center;
