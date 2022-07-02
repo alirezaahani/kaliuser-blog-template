@@ -1,0 +1,1411 @@
+/*h1, h2, h3, ul {margin:0;}*/
+html {
+    direction: rtl;
+}
+
+body {
+    font-family: Sahel, Tahoma, Verdana, "Times New Roman";
+    font-size: 15px;
+    color: #333;
+    margin: 0px;
+    padding: 0px;
+    line-height: 2em;
+    /*new*/
+    background: #e6e6e6;
+}
+
+p {
+    margin-bottom: 0.5em;
+}
+
+pre {
+    direction: ltr;
+    background-color: #FAFAEE;
+    border: 1px solid #DADADA;
+    margin: 1em;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 2px;
+}
+
+.btn_submit {
+    direction: ltr;
+}
+
+.clear {
+    clear: both;
+}
+
+::-webkit-scrollbar {
+    background: #ddd;
+    width: 15px;
+    height: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 0px;
+    box-shadow: inset 0 0 10px #333;
+}
+
+::-webkit-scrollbar-corner {
+    background: #fff;
+}
+
+::-webkit-scrollbar-track {
+    background: #eee;
+    border-radius: 0px;
+    box-shadow: inset 0 0 10px #aaa;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #777;
+}
+
+
+/*-- Link & Button --*/
+h1,
+h2,
+h3 {
+    font-family: Sahel, "Times New Roman", Times, Arial, serif;
+}
+
+img {
+    border: none;
+    border-width: 0px;
+}
+
+a {
+    color: #3b86bd;
+    cursor: pointer;
+    text-decoration: none;
+    -moz-transition-duration: .3s;
+    -webkit-transition-duration: .3s;
+    -o-transition-duration: .3s;
+    -khtml-transition-duration: .3s;
+}
+
+a:hover {
+    color: #222;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:active {
+    outline: hidden;
+}
+
+.DNONE {
+    display: none;
+}
+
+/*-- Wrapper --*/
+#wrp {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    direction: rtl;
+}
+
+/*-- Header --*/
+.header {
+    background: #f00;
+}
+
+.headerWrp {
+    height: 70px;
+    margin: auto;
+    width: 90%;
+}
+
+.header .hdr_right {
+    float: right;
+    text-align: right;
+}
+
+.header .hdr_left {
+    float: left;
+    text-align: left;
+}
+
+/*-- Title & Description --*/
+.header .title {
+    padding: 0px 0px;
+}
+
+.header .title h1 {
+    font-family: Sahel, "Times New Roman", Arial, Helvetica;
+    font-size: 25px;
+    font-weight: bold;
+    color: #FFF;
+    margin: 6px 0px 5px 0px;
+    text-shadow: 2px 2px 1px #BF1D1D;
+}
+
+.header .title h1 a {
+    color: #FFF;
+}
+
+.header .title h1 a:hover {
+    color: #EEE;
+}
+
+.header .title .desc h2 {
+    font-family: Sahel, "tahoma", "Times New Roman", Arial, Helvetica;
+    font-weight: normal;
+    font-size: 16px;
+    cursor: default;
+    color: #fff;
+    margin: 0px;
+}
+
+/*-- Mini Icons --*/
+#wrp .mini_icon {
+    cursor: default;
+    text-align: center;
+    padding-top: 10px;
+    display: none;
+}
+
+#wrp .mini_icon .icons {
+    display: inline-block;
+}
+
+#wrp .mini_icon ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#wrp .mini_icon li {
+    float: left;
+    margin: 0px 2px 0px 2px;
+}
+
+#wrp .mini_icon li a.mi_home {
+    background: url(https://cdn.bayan.ir/blog/templates/365/home.png) no-repeat;
+    display: block;
+    height: 20px;
+    width: 20px;
+}
+
+#wrp .mini_icon li a.mi_rss {
+    background: url(https://cdn.bayan.ir/blog/templates/365/rss.png) no-repeat;
+    display: block;
+    height: 20px;
+    width: 20px;
+}
+
+
+/*-- Main Menu --*/
+.main_menu {
+    height: 35px;
+    background: #404040
+}
+
+.main_menu .cnt {
+    width: 90%;
+    margin: auto;
+}
+
+.main_menu .cnt ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main_menu .cnt li {
+    float: left;
+    cursor: default;
+    margin-right: 3px;
+}
+
+.main_menu .cnt a {
+    display: block;
+    font-family: Sahel, "Times New Roman", Arial, Helvetica;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    background: #666666;
+    padding: 4px 10px 3px 10px;
+}
+
+.main_menu .cnt a:hover {
+    color: #fff;
+    background: #555555;
+}
+
+.main_menu .cnt a.selected {
+    color: #fff;
+    background: #ff0000;
+    padding: 4px 10px 7px 10px;
+}
+
+/*-- wrp -> Box1 (Content) --*/
+#wrp .box1 {
+    margin-top: 2px;
+    background: #FFF;
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px#888;
+    box-shadow: 0 0 5px #888;
+}
+
+/*-- wrp -> Boxs-Left --*/
+#wrp .box1 .bx_left {
+    width: 20%;
+    float: left;
+    background: #f2f2f2;
+}
+
+* html #wrp .box1 .bx_left {
+    margin-left: -10px;
+}
+
+/*-- Module-Left --*/
+#wrp .box1 .bx_left .mod_left {
+    margin-bottom: 10px;
+}
+
+#wrp .box1 .bx_left .mod_left .title {
+    background: #666666;
+    padding: 8px 11px 8px 8px;
+    font-family: Sahel, "Times New Roman", Arial, Helvetica;
+    color: #FFF;
+    text-align: right;
+    cursor: default;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0px;
+}
+
+#wrp .box1 .bx_left .mod_left .cnt {
+    padding: 5px 6px 5px 5px;
+}
+
+/*-- mod_left BLANK --*/
+#wrp .box1 .bx_left .mod_left_blank {
+    margin-bottom: 10px;
+}
+
+#wrp .box1 .bx_left .mod_left_blank .cnt {
+    padding: 5px;
+}
+
+#wrp .box1 .bx_left .mod_left_blank .cnt .blogImage {
+    text-align: center;
+}
+
+#wrp .box1 .bx_left .mod_left_blank .cnt img {
+    text-align: center;
+    max-width: 95%;
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+* html #wrp .box1 .bx_left .mod_left_blank .cnt img {
+    width: 220px;
+    height: auto;
+}
+
+#wrp .box1 .bx_left .mod_left_blank .cnt .blog_description h4 {
+    padding: 5px;
+    color: #333;
+    font-size: 12px;
+    margin: 0px;
+    font-weight: normal;
+    font-family: Sahel, Tahoma, Geneva, sans-serif;
+}
+
+
+/*-- LI & UL --*/
+#wrp .box1 .bx_left .mod_left ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+#wrp .box1 .bx_left .mod_left li {
+    margin: 0px;
+    list-style: none;
+}
+
+/* Categories ----- */
+#wrp .box1 .bx_left .mod_left ul li ul.subcats a {
+    padding-right: 10px;
+    padding-top: 1px;
+    display: inline-block;
+    background: url(https://cdn.bayan.ir/blog/templates/365/sub_ico.png) right no-repeat;
+}
+
+#wrp .box1 .bx_left .mod_left .cats li a {
+    padding-bottom: 0px;
+    padding-right: 20px;
+    display: table-cell;
+    *display: inline-block;
+    background: url(https://cdn.bayan.ir/blog/templates/365/folder_ico.png) right no-repeat;
+}
+
+#wrp .box1 .bx_left .mod_left .cats li h3 {
+    margin: 0px;
+    font: 12px Sahel, "Times New Roman", Times, Arial, serif;
+}
+
+#wrp .box1 .bx_left .mod_left .cats li.selected {
+    background: none;
+}
+
+#wrp .box1 .bx_left .mod_left .subcats li.selected {
+    background: none;
+}
+
+#wrp .box1 .bx_left .mod_left .subcats {
+    margin-right: 14px;
+    margin-top: -3px;
+}
+
+#wrp .box1 .bx_left .mod_left .cats .count {
+    cursor: default;
+    display: table-cell;
+    color: #666;
+}
+
+#wrp .box1 .bx_left .mod_left .subcats .count {
+    cursor: default;
+    display: inline-block;
+    color: #666;
+}
+
+#wrp .box1 .bx_left .mod_left .category_selected {
+    background: #E5E5E5;
+    padding: 2px 5px 2px 5px;
+    display: block;
+    height: 21px;
+    max-height: auto;
+    *height: auto;
+}
+
+#wrp .box1 .bx_left .mod_left .category_selected a {
+    color: inherit;
+    cursor: default;
+}
+
+/*-LINKs-*/
+#wrp .box1 .bx_left .mod_left ul.links li {
+    padding: 2px 5px 3px 5px;
+    background: url(https://cdn.bayan.ir/blog/templates/365/line3.png) no-repeat center bottom;
+    *background: none;
+    *border-bottom: 1px solid #F5F5F5;
+    -moz-transition-duration: .3s;
+    -webkit-transition-duration: .3s;
+    -o-transition-duration: .3s;
+    -khtml-transition-duration: .3s;
+    /*white-space:nowrap;
+		overflow:hidden;*/
+}
+
+#wrp .box1 .bx_left .mod_left ul.links li:hover {
+    background: #E5E5E5 url(https://cdn.bayan.ir/blog/templates/365/line3.png) no-repeat center bottom;
+}
+
+#wrp .box1 .bx_left .mod_left .links li.selected {
+    background: #E5E5E5 url(https://cdn.bayan.ir/blog/templates/365/line3.png) no-repeat center bottom;
+}
+
+#wrp .box1 .bx_left .mod_left .links li a {
+    padding-bottom: 3px;
+    padding-right: 10px;
+    background: url(https://cdn.bayan.ir/blog/templates/365/sidebar-bullet.png) right no-repeat;
+}
+
+#wrp .box1 .bx_left .mod_left .links .count {
+    cursor: default;
+    color: #666;
+}
+
+#wrp .box1 .bx_left .mod_left ul.links li:last-child {
+    border-bottom: 0px;
+    background: none;
+}
+
+#wrp .box1 .bx_left .mod_left ul.links li:last-child:hover {
+    background: #E5E5E5;
+}
+
+#wrp .box1 .bx_left .mod_left ul.links li.selected:last-child {
+    background: #E5E5E5;
+}
+
+/* Advertising ---- */
+#wrp .box1 .bx_left .mod_left .cnt.ads {
+    text-align: center;
+    padding-top: 12px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+}
+
+#wrp .box1 .bx_left .mod_left .cnt.ads .view_ads {
+    margin-bottom: 10px;
+    display: block;
+}
+
+
+/*-- STAT Graph --*/
+#wrp .box1 .bx_left .mod_left #stat_summary_div {
+    clear: both;
+    padding: 2px 6px;
+}
+
+#wrp .box1 .bx_left .mod_left .cnt.stat {}
+
+#wrp .box1 .bx_left .mod_left .cnt.stat .row {
+    background: url(https://cdn.bayan.ir/blog/templates/365/line3.png) no-repeat center bottom;
+    *background: none;
+    clear: both;
+    padding-bottom: 23px;
+}
+
+#wrp .box1 .bx_left .mod_left .cnt.stat .row:last-child {
+    background: none;
+}
+
+#wrp .box1 .bx_left .mod_left .cnt.stat .StatTitle {
+    cursor: default;
+    color: #555;
+    font-size: 12px;
+    border: none;
+    font-weight: normal;
+    float: right;
+    text-align: right;
+
+}
+
+#wrp .box1 .bx_left .mod_left .cnt.stat .Value {
+    color: #000;
+    cursor: default;
+    float: left;
+    padding-left: 10px;
+    text-align: left;
+}
+
+
+
+/* TAG Cloud ---- */
+#wrp .box1 .bx_left .mod_left .cnt .tagcloud h3 {
+    margin: 0px 0px 0px 0px;
+    font-size: 12px;
+    font-family: Sahel, "tahoma", "Times New Roman", Times, Arial, serif;
+    font-weight: normal;
+    display: inline-block;
+    *display: inline;
+    *margin: 2px;
+}
+
+#wrp .box1 .bx_left .mod_left .cnt .tagcloud span {
+    display: inline-block;
+    margin: 1px 0px 1px 0px;
+}
+
+#wrp .box1 .bx_left .mod_left .cnt .tagcloud a {
+    padding: 2px 5px 2px 5px;
+    color: #333;
+    border: 1px solid #DDD;
+    background: #EEE url(https://cdn.bayan.ir/blog/templates/365/main-area-bg.png);
+    display: table-cell;
+    *display: inline-block;
+    margin: 2px 0px 2px 0px;
+}
+
+#wrp .box1 .bx_left .mod_left .cnt .tagcloud a:hover {
+    background: #066bac;
+    border: 1px solid #066bac;
+    color: #FFF;
+}
+
+#wrp .box1 .bx_left .mod_left .cnt .tagcloud a.selected {
+    background: #066bac;
+    border: 1px solid #066bac;
+    color: #FFF;
+}
+
+/* Recent Posts ---- */
+#wrp .box1 .bx_left .mod_left .cnt .list_view li {
+    display: inline-block;
+    background: none;
+    width: 100%;
+}
+
+#wrp .box1 .bx_left .mod_left .cnt .list_view li a {
+    background: none;
+}
+
+/*- Mobile -*/
+#wrp .box1 .bx_left .mod_left .cnt .list_view.mobile li a {
+    padding-bottom: 3px;
+    padding-right: 10px;
+    display: table-cell;
+    *display: inline-block;
+    background: url(https://cdn.bayan.ir/blog/templates/365/sidebar-bullet.png) right no-repeat;
+}
+
+#wrp .box1 .bx_left .mod_left .cnt .list_view .cnt {
+    margin-right: -1px;
+    margin-bottom: -1px;
+    padding: 4px 5px 6px 0px;
+    line-height: 18px;
+    border: none;
+    background: url(https://cdn.bayan.ir/blog/templates/365/line3.png) no-repeat center bottom;
+    -moz-transition-duration: .3s;
+    -webkit-transition-duration: .3s;
+    -o-transition-duration: .3s;
+    -khtml-transition-duration: .3s;
+}
+
+#wrp .box1 .bx_left .mod_left .cnt .list_view li a {
+    color: #222;
+}
+
+#wrp .box1 .bx_left .mod_left .cnt .list_view li a:hover {
+    color: #3b86bd
+        /*#cc0f00*/
+    ;
+}
+
+#wrp .box1 .bx_left .mod_left .cnt .list_view .cnt:hover {
+    background: #E5E5E5 url(https://cdn.bayan.ir/blog/templates/365/line3.png) no-repeat center bottom;
+}
+
+#wrp .box1 .bx_left .mod_left .cnt .list_view .cnt.selected {
+    background: #E5E5E5 url(https://cdn.bayan.ir/blog/templates/365/line3.png) no-repeat center bottom;
+}
+
+#wrp .box1 .bx_left .mod_left .cnt .list_view .date {
+    cursor: default;
+    font-size: 9px;
+    color: #666;
+    display: none;
+}
+
+#wrp .box1 .bx_left .mod_left .cnt .list_view.mobile .date {
+    display: inherit;
+}
+
+.cnt.max {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+/* wrp -> Content -> BX_Center --------------------------------------------- */
+.align {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.align2 {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.post_break {
+    padding-top: 0px;
+}
+
+#wrp .box1 .bx_center {
+    width: 79%;
+    float: right;
+}
+
+#wrp .box1 .bx_center .mod_center {
+}
+
+/* POST CENTER / CONTENT -> ------*/
+#wrp .box1 .bx_center a {}
+
+#wrp .box1 .bx_center .messages {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+#wrp .box1 .bx_center .messages .cnt {
+    padding: 8px 15px 7px 15px;
+    color: #555;
+}
+
+#wrp .box1 .bx_center .messages .cnt h2 {
+    color: #666;
+    text-shadow: 1px 1px 2px #EEE;
+    font-family: Sahel, "Times New Roman", Arial, Helvetica;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+    cursor: default;
+    margin: 5px;
+}
+
+#wrp .box1 .bx_center .messages .cnt h2 a.comment_count {
+    color: #555;
+    text-shadow: 1px 1px 2px #EEE;
+}
+
+#wrp .box1 .bx_center .messages .cnt h2 a.comment_count:hover {
+    color: #222;
+}
+
+#wrp .box1 .bx_center .post {
+    margin-bottom: 0px;
+    border-bottom: 1px solid #ccc;
+}
+
+#wrp .box1 .bx_center .post .title .date_title {
+    display: inline-block;
+    background: #F1F1F1;
+    border: 1px solid #DDD;
+    color: #696969;
+    cursor: default;
+    padding: 0px 3px 1px 3px;
+    margin: 3px 15px 5px 5px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+#wrp .box1 .bx_center .post .title h2 {
+    font-size: 20px;
+    color: #066bac;
+    padding-bottom: 3px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 15px 15px 5px 15px;
+    line-height: 1.3em;
+}
+
+#wrp .box1 .bx_center .post .title h2 a {
+    color: #066bac;
+}
+
+#wrp .box1 .bx_center .post .title h2 a:hover {
+    color: #0083c6;
+}
+
+#wrp .box1 .bx_center .post .body {
+    overflow: hidden;
+    height: auto;
+    line-height: 1.9em;
+    /*new*/
+    margin: 10px 15px 0px 14px;
+}
+
+#wrp .box1 .bx_center .post .body.space2 {
+    margin: 10px 45px 0px 14px;
+}
+
+#wrp .box1 .bx_center .post .space {
+    margin: 0px 29px 0px 29px;
+}
+
+#wrp .box1 .bx_center .post .body .cnt a {
+    color: #066bac;
+}
+
+#wrp .box1 .bx_center .post .body .cnt a:hover {
+    color: #000;
+}
+
+#wrp .box1 .bx_center .post .body .cnt {
+    text-align: justify;
+    padding-bottom: 15px;
+}
+
+#wrp .box1 .bx_center .post .body .cnt ul {
+    margin-top: -4px;
+}
+
+#wrp .box1 .bx_center .post .body .cnt ul li {
+    margin-right: 5px;
+    line-height: 1.9em;
+    /*new*/
+}
+
+#wrp .box1 .bx_center .post .body .cnt img {
+    max-width: 98%;
+    height: auto;
+    margin-right: 1px;
+    border: 0px solid #CCC;
+    padding: 2px;
+}
+
+#wrp .box1 .bx_center .post .body .post_list img {
+    max-width: 98%;
+    height: auto;
+    margin-right: 1px;
+    border: 0px solid #CCC;
+    padding: 2px;
+}
+
+#wrp .box1 .bx_center .post .body .readmore {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#wrp .box1 .bx_center .post .body .readmore a {
+    margin: 1px;
+    margin-left: 3px;
+    padding: 4px 7px 6px 7px;
+    background: #f3f3f3;
+    color: #777;
+    border: #ccc 1px solid;
+}
+
+#wrp .box1 .bx_center .post .body .readmore a:hover {
+    background: #066bac;
+    color: #fff;
+    border: #066bac 1px solid;
+}
+
+
+/*--- Post Detail ---*/
+#wrp .box1 .bx_center .post .post_detail {
+    background: #EEE;
+    border-top: 1px solid #E0E0E0;
+    padding-bottom: 5px;
+}
+
+#wrp .box1 .bx_center .post .post_detail .cnt {
+    padding-top: 4px;
+    color: #999;
+}
+
+#wrp .box1 .bx_center .post .post_detail .cnt .det_right {}
+
+#wrp .box1 .bx_center .post .post_detail .cnt .det_left {
+    float: left;
+    margin-left: 5px;
+}
+
+#wrp .box1 .bx_center .post .post_detail a {
+    color: #696969;
+    text-shadow: none;
+    cursor: pointer;
+}
+
+#wrp .box1 .bx_center .post .post_detail a:hover {
+    color: #000;
+}
+
+#wrp .box1 .bx_center .post .post_detail .cnt ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#wrp .box1 .bx_center .post .post_detail .cnt .det_left li {
+    float: left;
+    padding-right: 7px;
+    padding-left: 7px;
+    border-right: 1px solid #E0E0E0;
+    list-style: none;
+}
+
+#wrp .box1 .bx_center .post .post_detail .cnt .det_right li {
+    float: right;
+    list-style: none;
+    padding-right: 7px;
+}
+
+#wrp .box1 .bx_center .post .post_detail .cnt .date {
+    cursor: default;
+    color: #696969;
+    display: block;
+    padding-right: 25px;
+    background: url(https://cdn.bayan.ir/blog/templates/365/pd_ico_date.png) right 2px no-repeat;
+}
+
+#wrp .box1 .bx_center .post .post_detail .cnt .cmt {
+    display: block;
+    cursor: pointer;
+    padding-right: 25px;
+    background: url(https://cdn.bayan.ir/blog/templates/365/pd_ico_cmt.png) right 2px no-repeat;
+}
+
+#wrp .box1 .bx_center .post .post_detail .rating {
+    padding-right: 0px;
+}
+
+#wrp .box1 .bx_center .post .post_detail .cnt .rating {
+    display: block;
+}
+
+#wrp .box1 .bx_center .post .post_detail .rating a {
+    color: #696969;
+    text-shadow: none;
+}
+
+#wrp .box1 .bx_center .post .post_detail .rating a:hover {
+    color: #000;
+}
+
+/* rating */
+.rate-button-box.rated {
+    font-weight: bold;
+}
+
+.rate-up,
+span.rateup {
+    color: #090;
+    margin-left: 5px;
+}
+
+.rate-down,
+span.ratedn {
+    color: #A00;
+    padding: 0px;
+}
+
+img.rateimg,
+img.renew,
+img.rateup,
+img.ratedn {
+    background: url(https://cdn.bayan.ir/blog/templates/365/pd_ico_rate.png) no-repeat center left;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+}
+
+.rate-down img.rateimg,
+img.ratedn {
+    background-position: -3px -25px;
+}
+
+.rate-up img.rateimg,
+img.rateup {
+    background-position: -3px -5px;
+}
+
+
+
+/*--- Post Details Right [NEW] ---*/
+#wrp .box1 .bx_center .post .post_details_right {
+    float: right;
+}
+
+a.nolink {
+    cursor: default;
+}
+
+#wrp .box1 .bx_center .post .post_details_right ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#wrp .box1 .bx_center .post .post_details_right ul li {
+    position: relative;
+}
+
+#wrp .box1 .bx_center .post .post_details_right .up {
+    background: #00b711 url(https://cdn.bayan.ir/blog/templates/365/ico_det_up.png) center no-repeat;
+    width: 24px;
+    height: 24px;
+}
+
+#wrp .box1 .bx_center .post .post_details_right .up:hover {
+    background: #10941c url(https://cdn.bayan.ir/blog/templates/365/ico_det_up.png) center no-repeat;
+}
+
+#wrp .box1 .bx_center .post .post_details_right .up:hover .Tips {
+    display: block
+}
+
+#wrp .box1 .bx_center .post .post_details_right .down:hover .Tips {
+    display: block
+}
+
+#wrp .box1 .bx_center .post .post_details_right .down {
+    background: #ff2727 url(https://cdn.bayan.ir/blog/templates/365/ico_det_down.png) center no-repeat;
+    width: 24px;
+    height: 24px;
+}
+
+#wrp .box1 .bx_center .post .post_details_right .down:hover {
+    background: #e70808 url(https://cdn.bayan.ir/blog/templates/365/ico_det_down.png) center no-repeat;
+}
+
+#wrp .box1 .bx_center .post .post_details_right .comment {
+    background: #999 url(https://cdn.bayan.ir/blog/templates/365/ico_det_comment.png) center no-repeat;
+    width: 24px;
+    height: 24px;
+}
+
+#wrp .box1 .bx_center .post .post_details_right .comment:hover {
+    background: #404040 url(https://cdn.bayan.ir/blog/templates/365/ico_det_comment.png) center no-repeat;
+}
+
+#wrp .box1 .bx_center .post .post_details_right .date {
+    background: #999 url(https://cdn.bayan.ir/blog/templates/365/ico_det_date.png) center no-repeat;
+    width: 24px;
+    height: 24px;
+}
+
+#wrp .box1 .bx_center .post .post_details_right .date:hover {
+    background: #404040 url(https://cdn.bayan.ir/blog/templates/365/ico_det_date.png) center no-repeat;
+}
+
+#wrp .box1 .bx_center .post .post_details_right .rate-down img.rateimg,
+img.ratedn {
+    background: none;
+    width: 24px;
+    height: 24px;
+}
+
+#wrp .box1 .bx_center .post .post_details_right .rate-up img.rateimg,
+img.rateup {
+    background: none;
+    width: 24px;
+    height: 24px;
+}
+
+
+.Tips {
+    background-color: #DDD;
+    border: 1px solid #CCC;
+    display: none;
+    font: 13px/20px Sahel;
+    height: 21px;
+    padding: 0 6px;
+    position: absolute;
+    text-align: center;
+    z-index: 100;
+    left: 0px;
+    top: 0;
+    cursor: default;
+    margin-left: 34px;
+}
+
+
+/*COMMENT  --------------------------------------------- */
+#wrp .box1 .bx_center .post_comments {
+    margin: 5px 5px 5px 5px;
+}
+
+#wrp .box1 .bx_center .cmt_break {
+    margin-bottom: 10px;
+}
+
+#wrp .box1 .bx_center .post_comments .title_cmt {
+    height: 20px;
+    width: 100%;
+}
+
+#wrp .box1 .bx_center .post_comments .body_cmt {
+    height: auto;
+    line-height: 1.9em;
+    /*new*/
+    padding-top: 5px;
+    padding-bottom: 8px;
+    background: #F9F9F9;
+    border: 1px solid #b7becc;
+    border-top: none;
+}
+
+#wrp .box1 .bx_center .post_comments .body_cmt .cnt {
+    color: #333;
+}
+
+#wrp .box1 .bx_center .post_comments .body_cmt .cnt .cnt_l {
+    display: inline-block;
+    margin-right: -70px;
+    vertical-align: top;
+}
+
+#wrp .box1 .bx_center .post_comments .body_cmt .cnt .cnt_r {
+    display: inline-block;
+    margin-right: -70px;
+    min-width: 50px;
+    height: auto;
+    float: right;
+}
+
+#wrp .box1 .bx_center .post_comments .body_cmt .cnt .cnt_r img {
+    width: 30px;
+    height: auto;
+}
+
+#wrp .box1 .bx_center .post_comments .body_cmt .cnt a {
+    color: #000;
+}
+
+#wrp .box1 .bx_center .post_comments .body_cmt .cnt a:hover {
+    color: #766958;
+}
+
+#wrp .box1 .bx_center .post_comments .body_cmt .cnt {
+    padding: 0 80px 0 20px;
+}
+
+#wrp .box1 .bx_center .post_comments .body_cmt .cnt ul {
+    margin-top: -4px;
+}
+
+#wrp .box1 .bx_center .post_comments .body_cmt .cnt ul li {
+    margin-right: 5px;
+    line-height: 1.9em;
+    /*new*/
+}
+
+/*-- Comment Details --*/
+#wrp .box1 .bx_center .post_comments .cmt_details {
+    height: 31px;
+    background: #F1F1F1;
+    border: 1px solid #b7becc;
+    border-bottom: none;
+    padding: 4px 0px 0px 0px;
+    margin-right: 0px;
+    color: #888;
+    cursor: default;
+}
+
+#wrp .box1 .bx_center .post_comments .cmt_details ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+#wrp .box1 .bx_center .post_comments .cmt_details .dets_right li {
+    list-style: none;
+    float: right;
+    margin-left: 7px;
+    padding-top: 2px;
+}
+
+#wrp .box1 .bx_center .post_comments .cmt_details .dets_left li {
+    list-style: none;
+    float: left;
+    margin-left: 7px;
+}
+
+#wrp .box1 .bx_center .post_comments .cmt_details:hover {
+    color: #666;
+}
+
+#wrp .box1 .bx_center .post_comments .cmt_details .dets_right {
+    float: right;
+    margin-right: 5px;
+}
+
+#wrp .box1 .bx_center .post_comments .cmt_details .dets_left {
+    float: left;
+    padding-top: 2px;
+    margin-left: 5px;
+}
+
+#wrp .box1 .bx_center .post_comments .cmt_details li a {
+    -moz-transition-duration: .0s;
+    -webkit-transition-duration: .0s;
+    -o-transition-duration: .0s;
+    -khtml-transition-duration: .0s;
+}
+
+#wrp .box1 .bx_center .cmt_details .avatar img {
+    width: 24px;
+    height: auto;
+}
+
+#wrp .box1 .bx_center .post_comments .cmt_details .author {
+    /*background:url(https://cdn.bayan.ir/blog/templates/365/details_ico_cmt.png) center -38px no-repeat;
+		width:18px;
+		height:18px;*/
+    display: block;
+}
+
+#wrp .box1 .bx_center .post_comments .cmt_details .website {
+    background: url(https://cdn.bayan.ir/blog/templates/365/details_ico_cmt.png) center -102px no-repeat;
+    width: 18px;
+    height: 18px;
+    display: block;
+}
+
+#wrp .box1 .bx_center .post_comments .cmt_details .website:hover {
+    background-position: center -125px;
+    cursor: pointer;
+}
+
+#wrp .box1 .bx_center .post_comments .cmt_details .email {
+    background: url(https://cdn.bayan.ir/blog/templates/365/details_ico_cmt.png) center -60px no-repeat;
+    width: 18px;
+    height: 18px;
+    display: block;
+}
+
+#wrp .box1 .bx_center .post_comments .cmt_details .email:hover {
+    background-position: center -79px;
+    cursor: pointer;
+}
+
+#wrp .box1 .bx_center .post_comments .cmt_details .cmt_date {
+    /*background:url(https://cdn.bayan.ir/blog/templates/365/details_ico_cmt.png) right 3px no-repeat;
+		padding-right:25px;*/
+    display: block;
+}
+
+#wrp .box1 .bx_center .post_comments .cmt_details a {
+    color: #444;
+    cursor: pointer;
+}
+
+#wrp .box1 .bx_center .post_comments .cmt_details a:hover {
+    color: #777;
+}
+
+
+/*Reply COMMENT  -------- */
+#wrp .box1 .bx_center .cmt_reply {
+    background: #FFC;
+    border: 1px solid #FC0;
+    margin: 0px 5px 10px 5px;
+    padding: 5px 10px 5px 10px;
+    color: #333;
+}
+
+#wrp .box1 .bx_center .cmt_reply.color2 {
+    background: #e7ffdb;
+    border: 1px solid #b9dfa7;
+    color: #407825;
+}
+
+#wrp .box1 .bx_center .cmt_reply.color3 {
+    background: #e5f7ff;
+    border: 1px solid #87cbff;
+    color: #006491;
+}
+
+.comment_add_form {}
+
+div.commentForm input.sendbutton {
+    padding: 5px 15px 6px 15px;
+    background: #f3f3f3;
+    color: #777;
+    border: #ccc 1px solid;
+    text-shadow: none;
+    margin: 1px;
+    cursor: pointer;
+    /*float:left;
+		margin-top:-27px;*/
+}
+
+div.commentForm input.sendbutton:hover {
+    background: #066bac;
+    color: #fff;
+    border: #066bac 1px solid;
+}
+
+.comment_add_form {
+    background: #f7f6f0;
+    margin-bottom: 5px;
+    padding: 10px 10px 10px 11px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+div.commentForm iframe {
+    background: #FFF;
+}
+
+
+
+/* KEYWORDS POST TAG ----------------- */
+#wrp .box1 .bx_center .post .post_detail .cnt .keywords_post {
+    margin-top: 5px;
+    margin-right: 8px;
+    padding-right: 18px;
+    cursor: default;
+    background: url(https://cdn.bayan.ir/blog/templates/365/pd_ico_key.png) right top no-repeat;
+    display: block;
+}
+
+#wrp .box1 .bx_center .post .post_detail .cnt .keywords_post span {
+    display: inline-block;
+}
+
+#wrp .box1 .bx_center .post .post_detail .cnt .keywords_post span a {
+    border-right: 1px dashed #aaa;
+    padding: 2px 7px 2px 7px;
+    display: table-cell;
+    margin-bottom: 5px;
+}
+
+#wrp .box1 .bx_center .post .post_detail .cnt .keywords_post span h3 {
+    margin: 0px;
+    font-size: 12px;
+    font-family: Sahel, "tahoma", "Times New Roman", Times, Arial, serif;
+    font-weight: normal;
+}
+
+#wrp .box1 .bx_center .post .post_detail .cnt .keywords_post .first a {
+    border-right: none;
+}
+
+
+#wrp .box1 .bx_center .post .post_detail .cnt .author {
+    padding-right: 5px;
+    /*background:url(https://cdn.bayan.ir/blog/templates/365/pd_ico_author.png) right 0px no-repeat;*/
+    color: #696969;
+    border-left: 0px solid #e8e8e8;
+    padding-left: 10px;
+    cursor: default;
+    display: block;
+}
+
+#wrp .box1 .bx_center .post .post_detail .cnt .post_rating {
+    padding-right: 10px;
+
+}
+
+/*-- ReNew Button  ------*/
+img.renew {
+    background: url(https://cdn.bayan.ir/blog/templates/365/details_ico.png) no-repeat 0px -133px;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+
+
+
+/*Pagination  --------------------------------------------- */
+#wrp .box1 .bx_center .pagination {
+    cursor: default;
+    display: block;
+    text-align: center;
+    margin: 5px 0px 5px 0px;
+}
+
+#wrp .box1 .bx_center .pagination .left {
+    margin-left: -3px;
+}
+
+#wrp .box1 .bx_center .pagination a {
+    padding: 3px 7px 3px 7px;
+    margin-left: 3px;
+    cursor: pointer;
+    background: #f3f3f3;
+    color: #777;
+    border: #ccc 1px solid;
+    text-shadow: none;
+}
+
+#wrp .box1 .bx_center .pagination a:hover {
+    background: #066bac;
+    color: #fff;
+    border: #066bac 1px solid;
+}
+
+.pagination {
+    padding-top: 0px;
+}
+
+
+/* Footer --------------------------------------------- */
+.footer {
+    clear: both;
+}
+
+.footer .cnt {
+    height: 40px;
+    margin: auto;
+    background: #ff2727;
+}
+
+.footer .links {
+    float: right;
+    cursor: default;
+    color: #EEE;
+    padding-top: 9px;
+    padding-right: 7px;
+}
+
+.footer .links a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.footer .links a:hover {
+    color: #EEE;
+    text-decoration: underline;
+}
+
+.footer .icons {
+    padding-top: 10px;
+    padding-left: 9px;
+}
+
+.footer .icons a {
+    float: left;
+    margin-right: 3px;
+}
+
+.footer .icons .bayan {
+    background: url(https://cdn.bayan.ir/blog/templates/shared/icon/bayan-icon.png) no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.footer .icons .blog {
+    background: url(https://cdn.bayan.ir/blog/templates/shared/icon/blog-icon.png) no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.footer .icons .bayanbox {
+    background: url(https://cdn.bayan.ir/blog/templates/shared/icon/bayanbox-icon.png) no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.footer .icons .rss {
+    background: url(https://cdn.bayan.ir/blog/templates/shared/icon/rss-icon.png) no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.footer .icons .templates {
+    background: url(https://cdn.bayan.ir/blog/templates/shared/icon/templates-icon.png) no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 800px) {
+    #wrp {
+        width: 100%;
+    }
+    #wrp .box1 .bx_center {
+        width: 100%;
+    }
+    #wrp .box1 .bx_left { 
+        width: 100%;    
+    }
+    .main_menu {
+        height: unset;
+        background: #666;
+    }
+    .main_menu .cnt { 
+        width: 100%;
+    }
+    .main_menu .cnt li {
+        float: unset;
+        margin-right: 0px;
+	text-align: center;
+    }
+    .header {
+        padding: 1em;
+    }
+    .headerWrp {
+        height: unset;
+    }
+    .header .hdr_right {
+        float: unset;
+        text-align: center;
+    }
+}

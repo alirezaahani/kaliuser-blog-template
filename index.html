@@ -1,0 +1,733 @@
+<!DOCTYPE html><html><head>
+    <link href="http://bayanbox.ir/view/3806056210068907921/xKali-linux-dragon-and-logo.sh-180x180.png.pagespeed.ic.2gr00Vl9Am.png" rel="shortcut icon">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/sahel-font/v1.0.0-alpha22/dist/font-face.css">
+    <link type="text/css" rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <head:meta></head:meta>
+    <head:script></head:script>
+    <head:style></head:style>
+</head>
+
+<body>
+    
+    <!-- شروع هدر بلاگ -->
+    <div class="header">
+        <div class="headerWrp">
+            <div class="hdr_right">
+                <div class="title">
+                    <h1><a href="(*blog_link*)">(*blog_title*)</a></h1>
+                    <div class="desc">
+                        <h2>(*blog_short_description*)</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="hdr_left"></div>
+        </div>
+    </div>
+    <!-- پایان هدر بلاگ -->
+    
+    <!-- شروع نوار منوی اصلی -->
+    <div class="main_menu">
+        <div class="cnt">
+            <box:menu>
+                <ul>
+                    <view:menu>
+                        <li><a href="(*menu_item_link*)" class="(*menu_item_selected*)">(*menu_item_title*)</a></li>
+                    </view:menu>
+                </ul>
+            </box:menu>
+        </div>
+    </div>
+    <!-- پایان نوار منوی اصلی -->
+    
+    <div id="wrp">
+        <div class="box1">
+            <div class="bx_center">
+                <div class="mod_center">
+                    <box:messages>
+                        <view:messages>
+                            <div class="align">
+                                <div class="item_(*message_type*)">
+                                    <div class="icon"></div>
+                                    (*message*)
+                                </div>
+                            </div><!-- ALIGN -->
+                        </view:messages>
+                    </box:messages>
+
+                    <!-- شروع شرح مطلب -->
+                    <box:post_detail>
+                        <div class="post_break"></div>
+                        <div class="post">
+                            <div class="title align">
+                                <h2><a href="(*post_link*)">(*post_title*)</a></h2>
+                                <div class="date_title">(*post_author*) <strong>|</strong> (*post_date*)</div>
+                            </div>
+                            <div class="body align">
+                                <div class="cnt">
+                                    (*post_full_content*)
+                                </div>
+                            </div><!-- #/body -->
+                            <div class="post_detail">
+                                <div class="cnt">
+                                    <div class="det_left">
+                                        <ul>
+                                            <box:post_rating>
+                                                <li>
+                                                    <span class="rate-box (*user_rated*)">
+                                                        <span class="rate-button-box rate-up (*user_rated_up*)">
+                                                            <a href="(*rate_up_link*)" class="rate-button" rel="nofollow" title="موافق">
+                                                                <img src="//blog.ir/media/images/cleardot.gif" alt="موافقین" class="rateimg">
+                                                                (*up_rates*)
+                                                            </a>
+                                                        </span>
+                                                        <span class="rate-button-box rate-down (*user_rated_down*)">
+                                                            <a href="(*rate_down_link*)" class="rate-button" rel="nofollow" title="مخالف">
+                                                                <img src="//blog.ir/media/images/cleardot.gif" alt="مخالفین" class="rateimg">
+                                                                (*down_rates*)
+                                                            </a>
+                                                        </span>
+                                                    </span>
+                                                </li>
+                                            </box:post_rating>
+                                            <li><span class="date">(*post_date format="%y/%m/%d"*)</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="det_right">
+                                        <ul>
+                                            <li><span class="author">(*post_author*)</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="clear"></div>
+
+                                    <box:post_tags>
+                                        <span class="keywords_post">
+                                            <view:post_tags>
+                                                <check:if tag_is_first>
+                                                    <span class="first"><a href="(*tag_link*)">
+                                                            <h3>(*tag_name*)</h3>
+                                                        </a></span>
+                                                </check:if>
+                                                <check:if not tag_is_first>
+                                                    <span><a href="(*tag_link*)">
+                                                            <h3>(*tag_name*)</h3>
+                                                        </a></span>
+                                                </check:if>
+                                            </view:post_tags>
+                                        </span>
+                                    </box:post_tags>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- #POST_Comments) -->
+                        <box:post_comments>
+                            <a name="comments"></a>
+                            <div class="align">
+                                <div class="messages">
+                                    <div class="cnt">
+                                        <h2>نظرات <a href="(*post_link*)#comments" class="comment_count"> ((*post_comment_count*))</a></h2>
+                                        <check:if not post_comment_count>
+                                            <center>هیچ نظری هنوز ثبت نشده است</center>
+                                        </check:if>
+                                    </div>
+                                </div>
+                            </div><!-- ALIGN -->
+
+                            <view:post_comments>
+                                <a name="comment-(*comment_id*)"></a>
+                                <div class="post_comments align">
+
+
+                                    <div class="cmt_details">
+                                        <div class="dets_left">
+                                            <li class="cmt_date"><a href="(*comment_link*)">(*comment_date format="%d %B%y ، %H:%M"*)</a></li>
+                                            <check:if comment_website>
+                                                <li><a class="website" href="(*comment_website*)" target="_blank" rel="nofollow" title="(*comment_website*)"></a></li>
+                                            </check:if>
+                                            <check:if comment_email>
+                                                <li><a href="mailto:(*comment_email*)" class="email" title="(*comment_email*)"></a></li>
+                                            </check:if>
+                                        </div>
+                                        <div class="dets_right">
+                                            <li class="avatar"><img src="(*comment_avatar*)"></li>
+                                            <li class="txt">(*comment_fullname*)</li>
+                                        </div>
+                                    </div>
+
+                                    <div class="body_cmt">
+                                        <div class="cnt">
+                                            <span class="cnt_l">(*comment_body*)</span>
+                                        </div>
+                                    </div><!-- #/body_cmt -->
+                                </div>
+
+                                <!-- #REPLY -->
+                                <check:if comment_reply>
+                                    <div class="align">
+                                        <div class="cmt_reply color3">
+                                            پاسخ:
+                                            <br>(*comment_reply*)
+                                        </div>
+                                    </div><!-- ALIGN -->
+                                </check:if>
+                                <!-- #/REPLY -->
+                                <div class="cmt_break"></div>
+                            </view:post_comments>
+                        </box:post_comments>
+                        <!-- #/post_comments -->
+
+                        <check:if post_has_send_comment>
+                            <a name="send_comment"></a>
+                            <div class="commentForm">
+                                <div class="align">
+                                    <div class="messages">
+                                        <div class="cnt">
+                                            <h2>ارسال نظر</h2>
+                                            <div class="item_wrn">
+                                                <div class="icon"></div>
+                                                لطفا در صورت ارسال نظر خصوصی ایمیل خود را در فرم نظرات ذکر کنید!
+                                                درصورت نبود ایمیل هیج راه ارتباطی برای پاسخ دادن سوال شما وجود ندارد.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- ALIGN -->
+                                <div class="align">
+                                    <div class="comment_add_form">
+                                        (*comment_add_form*)
+                                    </div>
+                                </div>
+                            </div>
+                        </check:if>
+
+                    </box:post_detail>
+                    <!-- پایان شرح مطلب -->
+
+                    <!-- شروع شرح صفحه -->
+                    <box:page_detail>
+                        <div class="post_break"></div>
+                        <div class="post">
+                            <div class="title align">
+                                <h2><a href="(*page_link*)">(*page_title*)</a></h2>
+                            </div>
+                            <div class="body align">
+                                <div class="cnt">
+                                    (*page_content*)
+                                </div>
+                            </div><!-- #/body -->
+                        </div>
+
+                        <!-- #PAGE_Comments) -->
+                        <box:page_comments>
+                            <a name="comments"></a>
+                            <div class="align">
+                                <div class="messages">
+                                    <div class="cnt">
+                                        <h2>نظرات <a href="(*page_link*)#comments" class="comment_count"> ((*page_comment_count*))</a></h2>
+                                        <check:if not page_comment_count>
+                                            <center>هیچ نظری هنوز ثبت نشده است</center>
+                                        </check:if>
+                                    </div>
+                                </div>
+                            </div><!-- ALIGN -->
+                            <view:page_comments>
+                                <a name="comment-(*comment_id*)"></a>
+                                <div class="post_comments align">
+
+                                    <div class="cmt_details">
+                                        <div class="dets_left">
+                                            <li class="cmt_date"><a href="(*comment_link*)">(*comment_date format="%d %B %y ، %H:%M"*)</a></li>
+                                            <check:if comment_website>
+                                                <li><a class="website" href="(*comment_website*)" target="_blank" rel="nofollow" title="(*comment_website*)"></a></li>
+                                            </check:if>
+                                            <check:if comment_email>
+                                                <li><a href="mailto:(*comment_email*)" class="email" title="(*comment_email*)"></a></li>
+                                            </check:if>
+                                        </div>
+                                        <div class="dets_right">
+                                            <li class="avatar"><img src="(*comment_avatar*)"></li>
+                                            <li class="txt">(*comment_fullname*)</li>
+                                        </div>
+                                    </div>
+
+                                    <div class="body_cmt">
+                                        <div class="cnt">
+                                            <span class="cnt_l">(*comment_body*)</span>
+                                        </div>
+                                    </div><!-- #/body_cmt -->
+                                </div>
+
+                                <!-- #REPLY -->
+                                <check:if comment_reply>
+                                    <div class="align">
+                                        <div class="cmt_reply color3">
+                                            پاسخ:
+                                            <br>(*comment_reply*)
+                                        </div>
+                                    </div><!-- ALIGN -->
+                                </check:if>
+                                <!-- #/REPLY -->
+                                <div class="cmt_break"></div>
+
+                            </view:page_comments>
+                        </box:page_comments>
+                        <!-- #/page_comments -->
+
+                        <check:if page_has_send_comment>
+                            <a name="send_comment"></a>
+                            <div class="commentForm">
+                                <div class="align">
+                                    <div class="messages">
+                                        <div class="cnt">
+                                            <h2>ارسال نظر</h2>
+                                            <div class="item_wrn">
+                                                <div class="icon"></div>
+                                                لطفا در صورت ارسال نظر خصوصی ایمیل خود را در فرم نظرات ذکر کنید!
+                                                درصورت نبود ایمیل هیج راه ارتباطی برای پاسخ دادن سوال شما وجود ندارد.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- ALIGN -->
+                                <div class="align">
+                                    <div class="comment_add_form">
+                                        (*comment_add_form*)
+                                    </div>
+                                </div>
+                            </div>
+                        </check:if>
+
+                    </box:page_detail>
+                    <!-- پایان شرح صفحه -->
+
+                    <!-- شروع خلاصه مطلب -->
+                    <box:post_list>
+                        <check:if post_list_title>
+                            <div class="align">
+                                <div class="messages">
+                                    <div class="cnt">
+                                        <h2>(*post_list_title*)</h2>
+                                    </div>
+                                </div>
+                            </div><!-- ALIGN -->
+                        </check:if>
+                        <div class="post_break"></div>
+                        <view:post_list>
+                            <div class="post">
+                                <div class="post_details_right">
+                                    <ul>
+
+                                        <box:post_rating>
+                                            <div class="rate-box (*user_rated*)">
+                                                <li>
+                                                    <div class="rate-button-box rate-up (*user_rated_up*) up">
+                                                        <a href="(*rate_up_link*)" class="rate-button tips" title="موافق">
+                                                            <img src="//blog.ir/media/images/cleardot.gif" alt="موافق" class="rateimg">
+
+                                                        </a>
+                                                        <span class="Tips">(*up_rates*)</span>
+                                                    </div>
+
+                                                </li>
+                                                <li>
+                                                    <div class="rate-button-box rate-down (*user_rated_down*) down">
+                                                        <a href="(*rate_down_link*)" class="rate-button tips" title="مخالف">
+                                                            <img src="//blog.ir/media/images/cleardot.gif" alt="مخالف" class="rateimg">
+                                                        </a>
+                                                        <span class="Tips">(*down_rates*)</span>
+                                                    </div>
+
+                                                </li>
+                                            </div>
+                                        </box:post_rating>
+
+                                        <li><a href="(*post_link*)#comments" class="tips" title="(*post_comment_count*) نظر">
+                                                <div class="comment"></div>
+                                            </a></li>
+                                    </ul>
+                                </div><!-- #/post_details_right -->
+
+                                <div class="title space align">
+                                    <h2><a href="(*post_link*)">(*post_title*)</a></h2>
+                                    <div class="date_title">(*post_author*) <strong>|</strong> (*post_date*)</div>
+                                </div>
+                                <div class="body space2 align">
+                                    <div class="cnt post_list">
+                                        (*post_summary*)
+                                        <check:if post_has_read_more>
+                                            <div class="readmore"><a href="(*post_link*)">ادامه مطلب...</a></div>
+                                        </check:if>
+
+                                    </div>
+                                </div><!-- #/body -->
+                                <div class="post_detail DNONE">
+                                    <div class="cnt">
+                                        <div class="det_left">
+                                            <ul>
+                                                <check:if post_has_comments_section>
+                                                    <li><a href="(*post_link*)#comments"><span class="cmt">(*post_comment_count*) نظر</span></a></li>
+                                                </check:if>
+                                                <box:post_rating>
+                                                    <li><span class="rating">
+                                                            <span class="rate-box (*user_rated*)">
+                                                                <span class="rate-button-box rate-up (*user_rated_up*)">
+                                                                    <a href="(*rate_up_link*)" class="rate-button" rel="nofollow" title="موافق">
+                                                                        <img src="//blog.ir/media/images/cleardot.gif" alt="موافقین" class="rateimg">
+                                                                        (*up_rates*)
+                                                                    </a>
+                                                                </span>
+                                                                <span class="rate-button-box rate-down (*user_rated_down*)">
+                                                                    <a href="(*rate_down_link*)" class="rate-button" rel="nofollow" title="مخالف">
+                                                                        <img src="//blog.ir/media/images/cleardot.gif" alt="مخالفین" class="rateimg">
+                                                                        (*down_rates*)
+                                                                    </a>
+                                                                </span>
+                                                            </span>
+                                                        </span></li>
+                                                </box:post_rating>
+                                                <li><span class="date">(*post_date format="%d %B %y ، %H:%M"*)</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="det_right">
+                                            <ul>
+                                                <li><span class="author">(*post_author*)</span></li>
+                                            </ul>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </view:post_list>
+                    </box:post_list>
+                    <!-- پایان خلاصه مطلب -->
+
+                    <box:pagination>
+                        <div class="align2">
+                            <div class="pagination">
+                                <div class="left">
+                                    <check:if page_last>
+                                        <a href="(*page_last*)" class="last">قدیمی ترین مطالب</a>
+                                    </check:if>
+                                    <check:if page_next>
+                                        <a href="(*page_next*)" class="next">مطالب قدیمی تر</a>
+                                    </check:if>
+                                </div>
+                                <check:if page_first>
+                                    <a href="(*page_first*)" class="first">جدیدترین مطالب</a>
+                                </check:if>
+                                <check:if page_prev>
+                                    <a href="(*page_prev*)" class="prev">مطالب جدید تر</a>
+                                </check:if>
+                            </div>
+                        </div><!-- ALIGN -->
+                    </box:pagination>
+
+                </div>
+                <!--/#mod_center-->
+                <div style="clear:both;"></div>
+            </div>
+            <!--/#bx_center-->
+
+            <!-- شروع ستون سمت چپ -->
+            <div class="bx_left">
+
+                <box:blog_info>
+                    <div class="mod_left_blank">
+                        <div class="cnt">
+                            <check:if blog_image>
+                                <div class="blogImage">
+                                    <img src="(*blog_image*)" alt="(*blog_title*)">
+                                </div>
+                            </check:if>
+                            <check:if blog_description>
+                                <div class="blog_description">
+                                    <h4>(*blog_description*)</h4>
+                                </div>
+                            </check:if>
+                            <div class="mini_icon">
+                                <div class="icons">
+                                    <ul>
+                                        <li><a target="new" href="(*blog_link*)" class="mi_home" title="خانه"></a></li>
+                                        <check:if rss_link>
+                                            <li><a target="new" href="(*rss_link*)" class="mi_rss" title="RSS"></a></li>
+                                        </check:if>
+                                        <div class="clear"></div>
+                                    </ul>
+                                </div>
+                            </div><!-- end-mini_icon -->
+                        </div>
+                    </div>
+                </box:blog_info>
+
+                <box:post_list flag="mobile">
+                    <div class="mod_left">
+                        <div class="title">پیام های کوتاه</div>
+                        <div class="cnt">
+                            <div class="list_view mobile">
+                                <view:post_list>
+                                    <div class="cnt (*post_selected*)">
+                                        <ul>
+                                            <li>
+                                                <div class="date">(*post_date format="%G{%e %B %y , %H:%M}"*)</div>
+                                                <a target="new" href="(*post_link*)">(*post_title*)</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </view:post_list>
+                            </div>
+                        </div>
+                    </div>
+                </box:post_list>
+
+                <box:ads>
+                    <div class="mod_left">
+                        <div class="title">تبلیغات</div>
+                        <div class="cnt ads">
+                            <div class="list_view mobile">
+                                <view:ads>
+                                    <span class="view_ads">
+                                        (*ad*)
+                                    </span>
+                                </view:ads>
+                            </div>
+                        </div>
+                    </div>
+                </box:ads>
+
+                <box:categories>
+                    <div class="mod_left">
+                        <div class="title">طبقه بندی موضوعی</div>
+                        <div class="cnt">
+                            <ul class="cats">
+                                <view:categories>
+                                    <li class="(*category_selected*)">
+                                        <check:if category_selected>
+                                            <span class="category_selected">
+                                                <a target="new">
+                                                    <h3>(*category_name*) </h3>
+                                                </a><span class="count"> ((*category_post_count*))</span>
+                                            </span>
+                                        </check:if>
+                                        <check:if not category_selected>
+                                            <a href="(*category_link*)">
+                                                <h3>(*category_name*) </h3>
+                                            </a><span class="count"> ((*category_post_count*))</span>
+                                        </check:if>
+                                        <check:if category_children>
+                                            <ul class="subcats">
+                                                <view:category_children></view:category_children>
+                                            </ul>
+                                        </check:if>
+                                    </li>
+                                </view:categories>
+                            </ul>
+                        </div>
+                    </div>
+                </box:categories>
+
+                <box:stat>
+                    <div class="mod_left">
+                        <div class="title">خلاصه آمار</div>
+                        <div class="cnt stat">
+                            <view:stat>
+                                <div class="row">
+                                    <div class="StatTitle">(*stat_title*)</div>
+                                    <div class="Value">(*stat_value*)</div>
+                                </div>
+                            </view:stat>
+                        </div>
+                    </div>
+                </box:stat>
+
+                <box:tag_cloud>
+                    <div class="mod_left">
+                        <div class="title">کلمات کلیدی</div>
+                        <div class="cnt">
+                            <div class="tagcloud">
+                                <view:tag_cloud>
+                                    <h3><a href="(*tag_link*)" class="(*tag_selected*)">(*tag_name*)</a></h3>
+                                </view:tag_cloud>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                </box:tag_cloud>
+
+                <box:archive>
+                    <div class="mod_left">
+                        <div class="title">بایگانی</div>
+                        <div class="cnt">
+                            <ul class="links">
+                                <view:archive>
+                                    <li class="(*archive_selected*)">
+                                        <a href="(*link_url*)">(*link_name*) </a><span class="count"> ((*link_count*))</span>
+                                    </li>
+                                </view:archive>
+                            </ul>
+                        </div>
+                    </div>
+                </box:archive>
+
+                <box:recent_posts>
+                    <div class="mod_left">
+                        <div class="title">آخرین مطالب</div>
+                        <div class="cnt">
+                            <div class="list_view">
+                                <view:recent_posts>
+                                    <div class="cnt (*post_selected*)">
+                                        <ul>
+                                            <li>
+                                                <div class="date">(*post_date format="%y/%m/%d"*)</div>
+                                                <a href="(*post_link*)">(*post_title*)</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </view:recent_posts>
+                            </div>
+                        </div>
+                    </div>
+                </box:recent_posts>
+
+                <box:most_visited_posts>
+                    <div class="mod_left">
+                        <div class="title">پربیننده ترین مطالب</div>
+                        <div class="cnt">
+                            <div class="list_view">
+                                <view:most_visited_posts>
+                                    <div class="cnt (*post_selected*)">
+                                        <ul>
+                                            <li>
+                                                <div class="date">(*post_date format="%y/%m/%d"*)</div>
+                                                <a href="(*post_link*)">(*post_title*)</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </view:most_visited_posts>
+                            </div>
+                        </div>
+                    </div>
+                </box:most_visited_posts>
+
+                <box:popular_posts>
+                    <div class="mod_left">
+                        <div class="title">محبوب ترین مطالب</div>
+                        <div class="cnt">
+                            <div class="list_view">
+                                <view:popular_posts>
+                                    <div class="cnt (*post_selected*)">
+                                        <ul>
+                                            <li>
+                                                <div class="date">(*post_date format="%y/%m/%d"*)</div>
+                                                <a href="(*post_link*)">(*post_title*)</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </view:popular_posts>
+                            </div>
+                        </div>
+                    </div>
+                </box:popular_posts>
+
+                <box:most_commented_posts>
+                    <div class="mod_left">
+                        <div class="title">مطالب پربحث‌تر</div>
+                        <div class="cnt">
+                            <div class="list_view">
+                                <view:most_commented_posts>
+                                    <div class="cnt (*post_selected*)">
+                                        <ul>
+                                            <li>
+                                                <div class="date">(*post_date format="%y/%m/%d"*)</div>
+                                                <a href="(*post_link*)">(*post_title*)</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </view:most_commented_posts>
+                            </div>
+                        </div>
+                    </div>
+                </box:most_commented_posts>
+
+                <box:recent_comments>
+                    <div class="mod_left">
+                        <div class="title">آخرین نظرات</div>
+                        <div class="cnt">
+                            <div class="list_view">
+                                <view:recent_comments>
+                                    <div class="cnt max">
+                                        <ul>
+                                            <li>
+                                                <div class="date">(*comment_date*) - (*comment_fullname*)</div>
+                                                <a href="(*comment_link*)">(*comment_body_text max="25"*)</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </view:recent_comments>
+                            </div>
+                        </div>
+                    </div>
+                </box:recent_comments>
+
+                <box:authors>
+                    <div class="mod_left">
+                        <div class="title">نویسندگان</div>
+                        <div class="cnt">
+                            <ul class="links">
+                                <view:authors>
+                                    <li><a href="(*author_link*)">(*author_name*) </a><span class="count"> ((*author_post_count*))</span></li>
+                                </view:authors>
+                            </ul>
+                        </div>
+                    </div>
+                </box:authors>
+
+                <box:daily_links>
+                    <div class="mod_left">
+                        <div class="title">پیوندهای روزانه</div>
+                        <div class="cnt">
+                            <ul class="links">
+                                <view:daily_links>
+                                    <li><a alt="(*link_alt*)" target="new" href="(*link_url*)">(*link_name*)</a></li>
+                                </view:daily_links>
+                            </ul>
+                        </div>
+                    </div>
+                </box:daily_links>
+
+                <box:links>
+                    <div class="mod_left">
+                        <div class="title">پیوندها</div>
+                        <div class="cnt">
+                            <ul class="links">
+                                <view:links>
+                                    <li><a alt="(*link_alt*)" target="new" href="(*link_url*)">(*link_name*)</a></li>
+                                </view:links>
+                            </ul>
+                        </div>
+                    </div>
+                </box:links>
+
+
+            </div>
+            <!-- پایان ستون سمت چپ -->
+
+            <!-- شروع فوتر بلاگ -->
+            <div class="footer">
+                <div class="cnt">
+                    <div class="links">
+                        (*copyright_notice*)
+                        <!--&nbsp;&nbsp;|&nbsp;&nbsp;(*template_based_on name="" url=""*)-->
+                    </div>
+                </div>
+            </div>
+            <!-- پایان فوتر بلاگ -->
+
+        </div>
+        <!--/#box1-->
+    </div>
+    <!--/#wrp-->
+
+
+</body></html>
